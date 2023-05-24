@@ -12,9 +12,9 @@
     <div id="root"></div>
 </body>
 <script>
-    const heading = document.createElement("h1");
+    const heading = React.createElement("h1",{},"my react element");
     heading.innerHTML = "My react practise";
-    const root = document.getElementById("root");
-    root.appendChild(heading);
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(heading);
 </script>
 </html>
