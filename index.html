@@ -12,9 +12,17 @@
     <div id="root"></div>
 </body>
 <script>
-    const heading = React.createElement("h1",{},"my react element");
-    heading.innerHTML = "My react practise";
+    const heading1 = React.createElement("h1",{
+        id:"title",
+    },"heading 1");
+    const heading2 = React.createElement("h2",{
+        id:"title2",
+    },"heading 2");
+    const mymaindiv = React.createElement("div",{
+        id:"mydiv",
+    },[heading1,heading2])
+    
     const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(heading);
+    root.render(mymaindiv);
 </script>
 </html>
